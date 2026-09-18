@@ -42,10 +42,10 @@ int main(int argc, char *argv[]) {
     }
 
     size_t mem_size = (size_t)n * n * sizeof(double);
-    double *A   = (double*)malloc(mem_size);
-    double *B   = (double*)malloc(mem_size);
-    double *B_t = (double*)malloc(mem_size);
-    double *C   = (double*)malloc(mem_size);
+    double* A   = (double*)malloc(mem_size);
+    double* B   = (double*)malloc(mem_size);
+    double* B_t = (double*)malloc(mem_size);
+    double* C   = (double*)malloc(mem_size);
 
     if (!A || !B || !B_t || !C) {
         fprintf(stderr, "Ошибка выделения памяти\n");
