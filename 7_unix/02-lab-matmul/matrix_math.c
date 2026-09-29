@@ -12,7 +12,9 @@ void multiply_standard(const double *A, const double *B, double *C, int n) {
     }
 }
 
-void transpose_matrix(const double *src, double *dst, int n) {
+void transpose_matrix(const double * restrict src,
+                      double * restrict dst,
+                      int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             dst[j * n + i] = src[i * n + j];
